@@ -3,21 +3,123 @@
     padding: 0;
     box-sizing: border-box;
 }
-.header_top{
-    display: flex;
+.container{
+    width: 1440px;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
 }
-.header_top h1{
-    font-size: 40px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+li{
+    list-style: none;
 }
 
-.navbar ul {
+.header_top{
+    margin: 25px 0;
+    display: inline-block;
+}
+.container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.navbar ul li a{
-    text-align: right;
-    
+
+.header_top h1{
+    font-size: 40px;
+    text-align: start;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    color: teal;
 }
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.navbar ul li{
+    margin-right: 35px;
+}
+
+.navbar ul li a{
+    font-size: 20px;
+    font-family: serif;
+    font-weight: 500;
+    color: brown;
+    position: relative;
+}
+
+.navbar ul li a::before {
+	position: absolute;
+	content: '';
+	height: 3px;
+	width: 0;
+	background-color: tomato;
+	left: 0;
+	bottom: -7px;
+	transition: .4s;
+}
+.navbar ul li a:hover:before{
+    width: 100%;
+   }
+
+.navbar ul li a::after {
+	position: absolute;
+	content: '';
+	height: 3px;
+	width: 0;
+	background-color: black;
+	right: 0;
+	top: -7px;
+	transition: .4s;
+}
+
+.navbar ul li a:hover:after{
+    width: 100%;
+}
+
+
+.btn{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    height: 45px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(3, 170, 170);
+    color: rgb(107, 3, 177);
+    transition: .4s;
+}
+.btn:hover{
+    border: tomato;
+    background-color: #ffffff;
+    color: black;
+}
+/* header part end */
+
+/* Our Photo part start */
+
+.Our_photo{
+    margin: 50px;
+    /* background-color: grey; */
+}
+.Our{
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: grey;
+}
+.Pht{
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-weight: 800;
+}
+
+
+
+
+/* Our Photo part end */
