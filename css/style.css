@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header_top{
+    display: flex;
+}
+.header_top h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul li a{
+    text-align: right;
+    
+}
