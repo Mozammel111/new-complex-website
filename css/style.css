@@ -148,7 +148,44 @@ li{
 .row_1 img{
     height: 300px;
     width: 350px;
-
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 /* Our Photo part end */
+
+/* grid part start */
+
+h1, h5{
+    text-align: center;
+}
+.container_1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px) 50px 50px;
+    gap: 25px;
+    margin: 50px;
+}
+
+.box{
+    background-color: grey;
+}
+#box-1{
+    grid-row: span 5;
+}
+#box-11, #box-12{
+    grid-column: span 3;
+}
+#box-6, #box-7, #box-9, #box-10{
+    background-color: red;
+}
+#box-1{
+    font-size: 20px;
+    color: tomato;
+    font-family: serif;
+    font-weight: 700;
+}
+
+/* grid part end */
