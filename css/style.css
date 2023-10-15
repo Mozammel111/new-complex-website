@@ -189,3 +189,56 @@ h1, h5{
 }
 
 /* grid part end */
+
+/* grid area Layout start */
+h2{
+    text-align: center;
+}
+
+.header_top_1, .navbar_1, .main, .sidebar, .advertise, .footer{
+    background-color: bisque;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.header_top_1 {
+    grid-area: header;
+}
+
+.navbar_1 {
+    grid-area: nav;
+}
+
+.main{
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 120px;
+}
+
+.advertise{
+    grid-area: advertise;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.container_3{
+    display: grid;
+    margin: 50px;
+    gap: 20px;
+    grid-template-areas:
+    "header    header    header      header"
+    "nav       main       main         sidebar"
+    "nav       main       main         advertise"
+    "footer    footer    footer      footer"
+    ;
+}
+
+/* grid area Layout end */
