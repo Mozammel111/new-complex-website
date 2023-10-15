@@ -240,5 +240,32 @@ h2{
     "footer    footer    footer      footer"
     ;
 }
+/* Small devices */
+@media screen and (max-width: 576px) {
+    .container_3{
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "sidebar"
+        "advertise"
+        "footer"
+        ;
+    }
+}
+
+/* medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .container_3{
+        grid-template-areas: 
+        "header header  header header"
+        "nav  nav       main    main"
+        "sidebar  sidebar   advertise"
+        "footer      footer    footer"
+        ;
+    }
+}
+
 
 /* grid area Layout end */
